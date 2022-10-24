@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 //#define BIN_NUM
 //#define HEX_NUM
@@ -8,7 +8,7 @@ void main() {
 	int num_dec = 0;
 	int num_save = 0;
 	int calc = 0;
-	cout << "Ââåäèòå ÷èñëî â äåñÿòè÷íîé ñèñòåìå ñ÷èñëåíèÿ: "; cin >> num_dec;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð² Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ ÑÑ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ: "; cin >> num_dec;
 	int num_bin = num_dec;
 	int* arr = new int[num_bin];
 	for (int i = 0; i < num_bin; i++)
@@ -19,7 +19,7 @@ void main() {
 		num_save = num_dec / 2;
 		num_dec = num_save;
 	}
-	cout << "×èñëî â äâîè÷íîé ñèñòåìå ñ÷èñëåíèÿ: ";
+	cout << "Ð§Ð¸ÑÐ»Ð¾ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ ÑÑ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ: ";
 	for (int i = (calc + 1); i >= 0; i--)
 	{
 		cout << arr[i] << " ";
@@ -32,10 +32,10 @@ void main() {
 	char arr_char_hex[num_hex] = { '0','1','2','3','4','5','6','7','8','9', 'A', 'B', 'C', 'D', 'E', 'F' };
 	int arr_save[num_hex];
 	int calc = 0;
-	cout << "Ââåäèòå ÷èñëî â äåñÿòè÷íîé ñèñòåìå ñ÷èñëåíèÿ: "; cin >> num_dec;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð² Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ ÑÑ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ: "; cin >> num_dec;
 	int num_save = 1;
 	if (num_dec < num_hex)
-		cout << "×èñëî â øåñòíàäöàòåðè÷íîé ñèñòåìå ñ÷èñëåíèÿ: " << arr_char_hex[num_dec];
+		cout << "Ð§Ð¸ÑÐ»Ð¾ Ð² ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ ÑÑ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ: " << arr_char_hex[num_dec];
 	else {
 		for (int i = 0; i < num_hex; i++)
 		{
@@ -46,7 +46,7 @@ void main() {
 			num_dec = num_save;
 		}
 
-		cout << "×èñëî â øåñòíàäöàòåðè÷íîé ñèñòåìå ñ÷èñëåíèÿ: ";
+		cout << "Ð§Ð¸ÑÐ»Ð¾ Ð² ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ ÑÑ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ: ";
 		for (int i = calc + 1; i >= 0; i--)
 		{
 
